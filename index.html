@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <title>Tienda-Facundo Rodriguez</title>
+</head>
+
+<body class="bodyIndex">
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
+                    <a class="navbar-brand" href="#"><img src="./img/escudo.png" class="escudo" alt=""></a>
+                    <p class="tituloNavbar">Club Atlético Peñarol</p>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4" id="titulo">TIENDA NO OFICIAL</h1>
+            <p class="lead">Selecciona las indumentarias que mas te gusten</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+            
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA OFICIAL HOMBRE</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camisetaOficial.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">3290</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>AÑO 2021</li>
+                            <li>CAMISETA PRINCIPAL</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA NIÑO </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camisetaGold.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">3000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAMISETA COLABORACIÓN</li>
+                            <li>COLOR GRIS Y NEGRO</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA OFICIAL MUJER</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/CamisetaOficialMujer.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">4000</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAMISETA PRINCIPAL MUJER</li>
+                            <li>AÑO 2021</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUZO DE VESTIR</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/buzoAmarillo.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5900</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>BUZO DE ALGODÓN</li>
+                            <li>COLOR AMARILLO</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">BUZO DE VESTIR</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/buzoNegro.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5769</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>BUZO DE ALGODON</li>
+                            <li>COLOR NEGRO</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMPERON</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camperon.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">2599</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>CAMPERON PARA LLUVIA</li>
+                            <li>COLOR NEGRO</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+                
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMPERA RETRO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/camperaRetro.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">4299</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>ESTILO RETRO</li>
+                            <li>AMARILLA Y NEGRA</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">CAMISETA BASKETBALL</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/musculosa.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">869</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>OFICIAL</li>
+                            <li>2021</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm" id="cards">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">SHORT OFICIAL</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="img/shortEntrenamiento.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">S/. <span class="">5397</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li></li>
+                            <li>2021</li>
+                            <li>COLOR NEGRO</li>
+                            <li><img src="./img/pumam.jpg" height="70px" width="" alt=""></li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" id="botonComprar" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer__padre">
+        <div class="footer__hijo">
+            <div class="footer__logo">
+                <img src="./img/escudo.png" alt="Escudo Peñarol" class="footer__logo">
+            </div>
+
+            <div class="footer__terminos">
+                <h6 class="footer__texto">Mi primer contacto al mundo del desarrollo web vía Coder House, doy por finalizada mi primer página web, espero que les guste.</h6>
+            </div>
+    </div>
+        <div class="footer__hijo">
+            <h2 class="footer__redesSociales">Redes Sociales</h2>
+                <a href="https://www.instagram.com/oficialcap/?hl=es-la" class="footer__links"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://twitter.com/OficialCAP?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="footer__links"><i class="fab fa-twitter"></i>Twitter</a>
+                <a href="https://es-la.facebook.com/OficialCAP/" class="footer__links"><i class="fab fa-facebook"></i>Facebook</a>
+                <a href="https://www.youtube.com/channel/UCgL0le-4q-bq-2pZnR9KVJg" class="footer__links"><i class="fab fa-youtube"></i>Youtube</a>
+        </div>
+        </div>
+        <div class="footer__coppyright">
+        <hr>
+        <h6 class="footer footer__coppyright--color">Todos los derechos reservados © <b>Facundo Rodriguez</b></h6>
+        </div>
+</footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>

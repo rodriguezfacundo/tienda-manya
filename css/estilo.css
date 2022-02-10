@@ -1,0 +1,91 @@
+#cargando {
+    display: none;
+}
+
+.escudo{
+    height: 50px;
+    width: 35px;
+}
+
+.bodyIndex{
+    background-color: black;
+}
+
+#cards{
+background-color: rgb(211, 211, 26);
+}
+#botonComprar{
+    background-color: black;
+    border: none;
+}
+#titulo{
+font-family: 'Oswald', sans-serif;
+color: rgb(211, 211, 26);
+font-size: 50px;
+}
+.lead{
+    color: white;
+}
+.tituloNavbar{
+    color: rgb(211, 211, 26);
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+}
+/*-------------------- FOOTER ------------------*/
+.footer {
+    background-color: rgb(211, 211, 26);
+    grid-area: footer;
+    width: 100%;
+    padding: 50px 0px; }
+    .footer .footer__padre {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      margin-top: 100px; }
+    .footer .footer__hijo {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      color: #7a7a7a; }
+    .footer .footer__logo {
+      width: 40px; }
+    .footer .footer__hijo .footer__terminos {
+      max-width: 300px;
+      margin-top: 20px;
+      font-weight: 500;
+      color: #7a7a7a;
+      font-size: 18px; }
+    .footer .footer__hijo .footer__redesSociales {
+      margin-bottom: 30px;
+      font-weight: 700; }
+    .footer .footer__hijo .footer__links {
+      margin-top: 10px;
+      color: #7a7a7a;
+      font-weight: 600;
+      text-decoration: none; }
+    .footer .footer__hijo .footer__links:hover {
+      opacity: 0.8; }
+    .footer .footer__hijo .footer__links .fab {
+      font-size: 10px; }
+    .footer .footer__coppyright {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0px 40px; }
+    .footer .footer__coppyright--color {
+      margin-top: 20px;
+      color: #7a7a7a; }
+    .footer .footer__coppyright hr {
+      border: none;
+      height: 1px;
+      background-color: #7a7a7a; }
+    .footer .footer__coppyright--color {
+      color: #7a7a7a;
+      text-align: center; }
+  
+  @media screen and (max-width: 320px) {
+    .footer__hijo {
+      text-align: center; }
+    .footer__redesSociales {
+      text-align: center; } }
