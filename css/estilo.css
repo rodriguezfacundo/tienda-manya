@@ -11,6 +11,17 @@
     background-color: black;
 }
 
+.bodyCompra{
+  background-color: black;
+}
+.form-control{
+  background-color: rgb(211, 211, 26);
+  color: black;
+}
+.descuentos{
+  color: white;
+}
+
 #cards{
 background-color: rgb(211, 211, 26);
 }
