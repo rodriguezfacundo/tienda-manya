@@ -30,7 +30,7 @@ function procesarCompra() {
     if (compra.obtenerProductosLocalStorage().length === 0) {
         Swal.fire({
             type: 'error',
-            title: 'Oops...',
+            title: 'Algo anda mal...',
             text: 'No hay productos, selecciona alguno',
             showConfirmButton: false,
             timer: 2000
